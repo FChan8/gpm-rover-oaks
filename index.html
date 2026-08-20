@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rover Oaks · Grounds equipment · Grok Property Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1c1912;
+      --muted: #6a6456;
+      --gold: #9a7a30;
+      --paper: #f4efe4;
+      --card: #ebe4d4;
+      --line: #ddd4c0;
+      --rec: #e7d7a8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body { font: 17px/1.5 "IBM Plex Sans", Helvetica, sans-serif; }
+    main { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
+    .brand { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+    .prep { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    hr.rule { border: 0; height: 2px; background: var(--gold); width: 48px; margin: 22px 0; }
+    h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(32px, 8vw, 44px); line-height: 1.12; font-weight: 700; margin: 0; }
+    .lede { margin: 16px 0 0; color: var(--muted); font-size: 17px; max-width: 34em; }
+    h2 { font-family: Fraunces, Georgia, serif; font-size: 22px; margin: 40px 0 14px; font-weight: 600; }
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 28px; }
+    .fact { background: var(--card); border-radius: 12px; padding: 14px 16px; }
+    .fact b { display: block; font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 600; }
+    .fact span { display: block; margin-top: 4px; font-size: 13px; color: var(--muted); }
+    .goal { display: grid; grid-template-columns: 96px 1fr; gap: 8px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .goal:last-child { border-bottom: 0; }
+    .goal dt { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); font-weight: 600; padding-top: 4px; }
+    .goal dd { margin: 0; }
+    .opt { background: var(--card); border-radius: 14px; padding: 16px 18px; margin: 0 0 10px; }
+    .opt.rec { background: var(--rec); }
+    .k { margin: 0; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+    .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; margin-top: 4px; }
+    .row h3 { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 600; }
+    .m { margin: 0; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+    .why { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="brand">Grok Property Management</p>
+  <p class="prep">Prepared for Jack Jones · Rover Oaks Pet Resort · 20 August 2026</p>
+  <hr class="rule">
+  <h1>Used compact tractor with a loader</h1>
+  <p class="lede">Advisory recommendation based on current operations. Recurring work is spreading dump-truck mulch. Excavation is a few days a year and has already been hired.</p>
+
+  <div class="facts">
+    <div class="fact"><b>Mulch</b><span>Several times a year</span></div>
+    <div class="fact"><b>Dirt</b><span>Back pad, leftover spoil</span></div>
+    <div class="fact"><b>Jack</b><span>First-time operator</span></div>
+    <div class="fact"><b>$20k</b><span>Baseline, not a ceiling</span></div>
+  </div>
+
+  <h2>What this machine is for</h2>
+  <dl>
+    <div class="goal"><dt>Mulch</dt><dd>Dump-truck loads, several times a year. Spread on grass.</dd></div>
+    <div class="goal"><dt>Dirt</dt><dd>Move spoil and material on the back pad.</dd></div>
+    <div class="goal"><dt>Operator</dt><dd>Jack. First-time tractor operator.</dd></div>
+    <div class="goal"><dt>Budget</dt><dd>$20,000 baseline. Stretch for condition and local service.</dd></div>
+    <div class="goal"><dt>Digging</dt><dd>A few days a year. Currently hired.</dd></div>
+    <div class="goal"><dt>Fence</dt><dd>Unlikely this year.</dd></div>
+  </dl>
+
+  <h2>Equipment classes</h2>
+  <article class="opt rec">
+    <p class="k">Recommended</p>
+    <div class="row">
+      <h3>Used compact tractor with a loader</h3>
+      <p class="m">$15–24k used, before tax</p>
+    </div>
+    <p class="why">Matches dump-truck mulch volume. The east drive has already taken a dump truck.</p>
+  </article>
+  <article class="opt">
+    <p class="k">Alternative</p>
+    <div class="row">
+      <h3>Used subcompact tractor with a loader</h3>
+      <p class="m">$14–22k used, before tax</p>
+    </div>
+    <p class="why">Same work at a lower price. Smaller bucket; more cycles to spread a load.</p>
+  </article>
+  <article class="opt">
+    <p class="k">Alongside either</p>
+    <div class="row">
+      <h3>Hire or rent a mini-excavator</h3>
+      <p class="m">About $300 per day locally</p>
+    </div>
+    <p class="why">Digging is a few days a year. The back pad was opened with a hired machine.</p>
+  </article>
+  <article class="opt">
+    <p class="k">Lower fit</p>
+    <div class="row">
+      <h3>Compact utility loader</h3>
+      <p class="m">$18–32k used</p>
+    </div>
+    <p class="why">Useful on turf. Weaker dump height for dump-truck mulch.</p>
+  </article>
+  <article class="opt">
+    <p class="k">Lower fit</p>
+    <div class="row">
+      <h3>New factory tractor-loader-backhoe</h3>
+      <p class="m">About $30k after tax</p>
+    </div>
+    <p class="why">Digging frequency does not support owning the backhoe.</p>
+  </article>
+
+  <p class="why" style="margin-top:18px">Fayetteville tax is 9.75% on a purchase. This is a class recommendation from Grok Property Management, not a purchase order.</p>
+  <footer>Jack Jones decides. No vendor contact or purchase is implied.</footer>
+</main>
+</body>
+</html>
