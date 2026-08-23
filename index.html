@@ -70,6 +70,9 @@
     .deck > article { flex: 0 0 min(87vw, 400px); scroll-snap-align: center; scroll-snap-stop: always; }
 
     .opt { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 16px; display: flex; flex-direction: column; }
+    .photowrap { position: relative; margin: -18px -18px 14px; }
+    .photowrap img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 17px 17px 0 0; background: var(--line); }
+    .phototag { position: absolute; right: 8px; bottom: 8px; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--white); background: rgba(28,25,18,.55); padding: 3px 7px; border-radius: 999px; }
     .opt.rec { background: var(--rec); border-color: #d5bd7c; }
     .k { margin: 0; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
     .opt.rec .k::after { content: " · pick of this lane"; color: var(--ink); }
@@ -189,6 +192,7 @@
     <div class="deck" tabindex="0" aria-label="$20k and below options carousel">
 
       <article class="opt rec" aria-label="Budget option: new New Holland Workmaster 25S">
+        <div class="photowrap"><img src="img/wm25s.jpg" alt="New Holland Workmaster 25S with 100LC loader, open station" loading="eager" width="880" height="550"><span class="phototag">same config · not this unit</span></div>
         <p class="k">Find of the sweep</p>
         <h3>2024 New Holland Workmaster 25S + loader · new</h3>
         <p class="price">$14,500 <small>cash + tax · brand new, 1 hr</small></p>
@@ -219,6 +223,7 @@
       </article>
 
       <article class="opt" aria-label="Budget option: used Bad Boy 3026H">
+        <div class="photowrap"><img src="img/bb3026h.jpg" alt="Bad Boy 3026 compact tractor with loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Most loader per dollar · warrantied used</p>
         <h3>2022 Bad Boy 3026H + loader · used</h3>
         <p class="price">$17,900 <small>asking, before tax</small></p>
@@ -249,6 +254,7 @@
       </article>
 
       <article class="opt" aria-label="Budget option: used KIOTI CX2510HST">
+        <div class="photowrap"><img src="img/cx2510hst.jpg" alt="KIOTI CX2510 with loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Lowest cash outlay</p>
         <h3>2020 KIOTI CX2510HST + loader · used</h3>
         <p class="price">$12,500 <small>asking, before tax</small></p>
@@ -280,6 +286,7 @@
       </article>
 
       <article class="opt" aria-label="Budget option: used John Deere 3032E">
+        <div class="photowrap"><img src="img/jd3032e.jpg" alt="The actual 2017 John Deere 3032E with loader at Greenway Morrilton" loading="lazy" width="880" height="550"><span class="phototag">actual unit</span></div>
         <p class="k">Under budget, even after tax</p>
         <h3>2017 John Deere 3032E + loader · used</h3>
         <p class="price">$17,590 <small>asking, before tax</small></p>
@@ -310,6 +317,7 @@
       </article>
 
       <article class="opt" aria-label="Budget option: new KIOTI CX2510H">
+        <div class="photowrap"><img src="img/cx2510h.jpg" alt="KIOTI CX2510H with loader at Tatum Motor Company" loading="lazy" width="880" height="550"><span class="phototag">listing photo</span></div>
         <p class="k">At the cap · new-warranty path</p>
         <h3>2025 KIOTI CX2510H + loader · new</h3>
         <p class="price">$20,000 <small>cash, before tax</small></p>
@@ -340,6 +348,7 @@
       </article>
 
       <article class="opt" aria-label="Budget option: KIOTI CK2620MB manual">
+        <div class="photowrap"><img src="img/ck2620mb.jpg" alt="KIOTI CK2620 with loader at Tatum Motor Company" loading="lazy" width="880" height="550"><span class="phototag">listing photo</span></div>
         <p class="k">Big frame, gear shift</p>
         <h3>2025 KIOTI CK2620MB + loader · new</h3>
         <p class="price">$18,900 <small>cash, before tax</small></p>
@@ -413,6 +422,7 @@
     <div class="deck" tabindex="0" aria-label="Best match options carousel">
 
       <article class="opt rec" aria-label="Best match option: KIOTI CK3520H">
+        <div class="photowrap"><img src="img/ck3520h.jpg" alt="The KIOTI CK3520H with KL4030 loader at Tatum Motor Company" loading="eager" width="880" height="550"><span class="phototag">listing photo</span></div>
         <p class="k">Best all-around</p>
         <h3>2025 KIOTI CK3520H HST + loader</h3>
         <p class="price">$24,000 <small>cash, before tax</small></p>
@@ -446,6 +456,7 @@
       </article>
 
       <article class="opt" aria-label="Best match option: Bad Boy 4035H used">
+        <div class="photowrap"><img src="img/bb4035h.jpg" alt="Bad Boy 4035 compact tractor with loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Maximum capability</p>
         <h3>2024 Bad Boy 4035H · used, 110 hrs</h3>
         <p class="price">$24,400 <small>asking, before tax</small></p>
@@ -479,6 +490,7 @@
       </article>
 
       <article class="opt" aria-label="Best match option: KIOTI CK2620H">
+        <div class="photowrap"><img src="img/ck2620h.jpg" alt="KIOTI CK2620H with loader at Tatum Motor Company" loading="lazy" width="880" height="550"><span class="phototag">listing photo</span></div>
         <p class="k">Lower-cost new loader</p>
         <h3>2025 KIOTI CK2620H HST + loader</h3>
         <p class="price">$21,000 <small>cash, before tax</small></p>
@@ -510,6 +522,7 @@
       </article>
 
       <article class="opt" aria-label="Best match option: Kubota L3302HST">
+        <div class="photowrap"><img src="img/l3302.jpg" alt="Kubota L3302 with LA526 loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Safest ownership path</p>
         <h3>Kubota L3302 HST + LA526 loader</h3>
         <p class="price">Quote <small>needed · expect ≈ $27.5–29.5k new</small></p>
@@ -541,6 +554,7 @@
       </article>
 
       <article class="opt" aria-label="Best match option: Bobcat CT2035">
+        <div class="photowrap"><img src="img/ct2035.jpg" alt="Bobcat CT2035 compact tractor with front-end loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Local 35-hp alternative</p>
         <h3>2026 Bobcat CT2035 HST · 1 hr</h3>
         <p class="price">Call <small>for price · MSRP $28,653 before loader</small></p>
@@ -618,6 +632,7 @@
 
       <!-- A2. CK4020H -->
       <article class="opt" aria-label="Additional: KIOTI CK4020H">
+        <div class="photowrap"><img src="img/ck4020h.jpg" alt="KIOTI CK-series tractor with KL4030 loader at Tatum Motor Company" loading="lazy" width="880" height="550"><span class="phototag">listing photo</span></div>
         <p class="k">The upgrade nobody needs yet</p>
         <h3>2025 KIOTI CK4020H HST + loader</h3>
         <p class="price">$27,000 <small>cash, before tax</small></p>
@@ -642,6 +657,7 @@
 
       <!-- A3. Bad Boy 4025H -->
       <article class="opt" aria-label="Additional: Bad Boy 4025H">
+        <div class="photowrap"><img src="img/bb4025h.jpg" alt="Bad Boy 4025 compact tractor with loader" loading="lazy" width="880" height="550"><span class="phototag">stock photo</span></div>
         <p class="k">Loader-first near-miss</p>
         <h3>2025 Bad Boy 4025H + loader · new</h3>
         <p class="price">Call <small>for price · ≈ $277/mo promo benchmark</small></p>
@@ -666,6 +682,7 @@
 
       <!-- A4. 4035HILB backhoe -->
       <article class="opt" aria-label="Additional: Bad Boy 4035HILB with backhoe">
+        <div class="photowrap"><img src="img/bb4035hilb.jpg" alt="Bad Boy 4035 compact tractor with loader, backhoe not shown" loading="lazy" width="880" height="550"><span class="phototag">stock · hoe not shown</span></div>
         <p class="k">Right family, wrong configuration</p>
         <h3>Bad Boy 4035HILB + loader + backhoe</h3>
         <p class="price">Call <small>for price · stock BBP00256</small></p>
@@ -815,7 +832,7 @@
   <!-- ================= SOURCES ================= -->
   <section id="sources" class="wrap">
     <h2>Sources</h2>
-    <p class="h2sub">Everything above traces to one of these. <span class="vok">✓</span> = opened and checked 23 Aug 2026.</p>
+    <p class="h2sub">Everything above traces to one of these. <span class="vok">✓</span> = opened and checked 23 Aug 2026. Card photos are dealer listing photos or manufacturer stock images — each is tagged on the photo; condition photos of used units live at the listing links.</p>
     <ul class="srcs">
       <li><span class="vok">✓</span> <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CK-Series-CK3520H-Tontitown-17152010" target="_blank" rel="noopener">Tatum — 2025 KIOTI CK3520H listing</a> ($24,000 cash / $27,900 @ 0%×84)</li>
       <li><span class="vok">✓</span> <a href="https://www.kioti.com/products/tractors/ck/ck3520h" target="_blank" rel="noopener">KIOTI — CK3520H official specs</a> (28.9 PTO hp · 54.5 in · 92.9 in · MSRP $25,171)</li>
