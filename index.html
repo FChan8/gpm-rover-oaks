@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rover Oaks · Tractor options &amp; deal guide · August 2026</title>
-  <meta name="description" content="Current Northwest Arkansas compact-tractor options for Rover Oaks Pet Resort, with verified prices, key specs, and negotiation targets. Recommendation only — Jack Jones decides.">
+  <meta name="description" content="Current Northwest Arkansas compact-tractor options for Rover Oaks Pet Resort in three lanes — $20k &amp; below, best match, and additional recommendations — with verified prices and negotiation targets. Jack Jones decides.">
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
     nav.jump { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); margin-top: 20px; }
     nav.jump .in { display: flex; gap: 4px; overflow-x: auto; padding: 8px 14px; max-width: 760px; margin: 0 auto; scrollbar-width: none; }
     nav.jump .in::-webkit-scrollbar { display: none; }
-    nav.jump a { flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; padding: 6px 11px; border-radius: 999px; }
+    nav.jump a { flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; padding: 6px 11px; border-radius: 999px; white-space: nowrap; }
     nav.jump a:hover { background: var(--card); }
 
     /* Fit gate */
@@ -72,11 +72,13 @@
     .opt { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 16px; display: flex; flex-direction: column; }
     .opt.rec { background: var(--rec); border-color: #d5bd7c; }
     .k { margin: 0; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
-    .opt.rec .k::after { content: " · top pick"; color: var(--ink); }
+    .opt.rec .k::after { content: " · pick of this lane"; color: var(--ink); }
     .opt h3 { margin: 6px 0 0; font-size: 21.5px; line-height: 1.2; }
     .price { margin: 10px 0 0; font-family: Fraunces, Georgia, serif; font-size: 30px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
     .price small { font-family: "IBM Plex Sans", sans-serif; font-size: 13px; font-weight: 600; color: var(--muted); }
     .otd { margin: 6px 0 0; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .otd .yes { color: var(--good); font-weight: 700; }
+    .otd .no { color: var(--warn); font-weight: 700; }
     .where { margin: 10px 0 0; font-size: 14px; }
     .where a { color: var(--ink); font-weight: 600; }
     .specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin: 14px 0 0; }
@@ -111,6 +113,7 @@
     table.deals tr:last-child td { border-bottom: 0; }
     table.deals td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
     table.deals td.t { font-variant-numeric: tabular-nums; color: var(--good); font-weight: 700; white-space: nowrap; }
+    table.deals td.grp { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); font-weight: 700; background: var(--paper); }
     .plays { background: var(--card); border-radius: 14px; padding: 16px 18px; margin-top: 14px; }
     .plays p { margin: 0 0 10px; } .plays p:last-child { margin: 0; }
 
@@ -119,14 +122,6 @@
     ol.gates li { counter-increment: g; background: var(--card); border-radius: 12px; padding: 12px 14px 12px 48px; margin: 0 0 8px; position: relative; font-size: 14.5px; color: #46412f; }
     ol.gates li::before { content: counter(g); position: absolute; left: 14px; top: 12px; width: 24px; height: 24px; border-radius: 999px; background: var(--gold); color: var(--white); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
     ol.gates b { color: var(--ink); display: block; margin-bottom: 2px; }
-
-    /* Other inventory */
-    .more { background: var(--card); border-radius: 12px; padding: 13px 15px; margin: 0 0 8px; font-size: 14.5px; }
-    .more .row1 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 14px; align-items: baseline; }
-    .more .row1 b { font-size: 15.5px; }
-    .more .m { color: var(--muted); font-size: 13.5px; font-variant-numeric: tabular-nums; }
-    .more p { margin: 6px 0 0; color: #46412f; }
-    .more a { color: var(--ink); font-weight: 600; }
 
     /* Tax + sources */
     .tax { background: var(--card); border-radius: 14px; padding: 16px 18px; }
@@ -152,10 +147,10 @@
 <main>
   <header class="top">
     <p class="brand">Rover Oaks Consulting HQ · Tractor &amp; Grounds</p>
-    <p class="prep">Prepared for Jack Jones · Rover Oaks Pet Resort, Fayetteville · Inventory checked 22 Aug 2026 · Prices &amp; links re-verified 23 Aug 2026</p>
+    <p class="prep">Prepared for Jack Jones · Rover Oaks Pet Resort, Fayetteville · Inventory checked 22 Aug 2026 · Prices, links &amp; market re-swept 23 Aug 2026</p>
     <hr class="rule">
-    <h1>Six tractors, one decision.<br>Swipe through them.</h1>
-    <p class="lede">Every price and spec below was re-checked against the dealer or manufacturer on 23 August. Each card shows the listed price <em>and</em> the price worth pushing for. Nothing is bought, held, or promised — Jack decides.</p>
+    <h1>Three lanes.<br>Swipe each one.</h1>
+    <p class="lede"><b>$20k &amp; below</b> is every credible loader tractor at or under budget right now. <b>Best match</b> is the machine class that actually fits dump-truck mulch, with room to grow. <b>Additional recommendations</b> is the rest worth knowing about. Every card re-verified against the dealer or manufacturer on 23 August; each shows the listed price <em>and</em> the price worth pushing for. Jack decides.</p>
     <div class="status">
       <span class="chip alert">No purchase approved</span>
       <span class="chip alert">KIOTI &amp; Bad Boy promos end Aug 31</span>
@@ -166,35 +161,179 @@
 
   <nav class="jump" aria-label="Sections">
     <div class="in">
-      <a href="#options">The options</a>
+      <a href="#budget">$20k &amp; below</a>
+      <a href="#best">Best match</a>
+      <a href="#additional">Additional</a>
       <a href="#fit">Will it fit?</a>
-      <a href="#deals">The deal to make</a>
-      <a href="#checklist">Before you go</a>
-      <a href="#more">Also out there</a>
+      <a href="#deals">The deal</a>
+      <a href="#checklist">Checklist</a>
       <a href="#tax">Tax</a>
       <a href="#sources">Sources</a>
     </div>
   </nav>
 
-  <!-- ================= OPTIONS DECK ================= -->
-  <section id="options" class="deckzone">
+  <!-- ================= LANE 1: $20K & BELOW ================= -->
+  <section id="budget" class="deckzone">
     <div class="wrap">
-      <h2>The options</h2>
-      <p class="h2sub">Ranked by priority. Swipe or use the arrows. Tap “The deal play” on any card for the negotiation script. One honesty note on loader numbers: every maker rates lift at the pivot pin, but KIOTI rates at a 59.8-in lift height while Kubota, Bobcat and Bad Boy rate at full height — so ask every dealer for <em>lift at full height with the actual bucket</em> before comparing.</p>
+      <h2>$20k &amp; below</h2>
+      <p class="h2sub">Every credible loader tractor at or under a $20,000 asking price within reach of Fayetteville, verified live today. Cheapest first. The out-the-door line tells you honestly which ones stay under $20k <em>after</em> tax.</p>
     </div>
     <div class="deckbar">
-      <span class="count" id="deckcount">1 / 6</span>
+      <span class="count">1 / 4</span>
       <span class="swipehint">Swipe for more →</span>
       <div class="btns">
-        <button class="navbtn" id="prev" aria-label="Previous option">←</button>
-        <button class="navbtn" id="next" aria-label="Next option">→</button>
+        <button class="navbtn prevbtn" aria-label="Previous option in $20k lane">←</button>
+        <button class="navbtn nextbtn" aria-label="Next option in $20k lane">→</button>
       </div>
     </div>
+    <div class="deck" tabindex="0" aria-label="$20k and below options carousel">
 
-    <div class="deck" id="deck" tabindex="0" aria-label="Tractor options carousel">
+      <!-- B1. Used CX2510HST -->
+      <article class="opt rec" aria-label="Budget option: used KIOTI CX2510HST">
+        <p class="k">Value of the lane</p>
+        <h3>2020 KIOTI CX2510HST + loader · used</h3>
+        <p class="price">$12,500 <small>asking, before tax</small></p>
+        <p class="otd">≈ $13,700 out the door at full 9.75% · <span class="yes">✓ under budget with ~$6k left for attachments</span></p>
+        <p class="where">Used · WT Equipment, Springdale (~15 min) · Gary Bramall <a href="tel:+14798417053">(479) 841-7053</a></p>
+        <div class="specs">
+          <div class="spec"><b>1,092 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>19.3 hp</b><span>PTO</span></div>
+          <div class="spec"><b>49.4 in</b><span>wide</span></div>
+          <div class="spec"><b>50 in</b><span>bucket</span></div>
+          <div class="spec"><b>211 hrs</b><span>hours</span></div>
+          <div class="spec"><b>HST</b><span>4WD</span></div>
+        </div>
+        <div class="why"><b>Why it matches</b><p>The lowest-cost credible machine in the region: HST pedals, 4WD, loader, barely broken in at 211 hours, and the narrowest platform here — it clears routes nothing else in this guide clears.</p></div>
+        <div class="watch"><b>Watch out</b><p>Smaller bucket means more trips per dump-truck load and lower dump height. No factory warranty left — it’s a used-machine inspection buy.</p></div>
+        <details class="deal">
+          <summary>The deal play <span class="tgt">target $11,500–12,000</span></summary>
+          <div class="body">
+            <p><b>The math:</b> it’s 62% of the new-unit price with barely broken-in hours — fair, not a steal. Out-of-state dealers advertise <em>new</em> CX2510s with loaders at $16,570–17,900 on free-loader promos, which caps what used should cost.</p>
+            <p><b>Open at $11,000 cash-today.</b> Realistic landing: <b>$11,500–12,000.</b></p>
+            <p><b>On the lot:</b> cold-start it, hold a loaded bucket up 30 seconds (sinking = tired hydraulics), work every pedal and lever, and check the hour meter looks original.</p>
+          </div>
+        </details>
+        <div class="cardlinks">
+          <a href="https://www.machinerypete.com/details/under-40-hp/2020/kioti/cx2510hst/22246660" target="_blank" rel="noopener">Dealer listing →</a>
+          <a href="https://www.kioti.com/products/tractors/cx/cx2510" target="_blank" rel="noopener">Official specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> price, hours, specs, still listed</p>
+      </article>
+
+      <!-- B2. JD 3032E -->
+      <article class="opt" aria-label="Budget option: used John Deere 3032E">
+        <p class="k">Under budget, even after tax</p>
+        <h3>2017 John Deere 3032E + loader · used</h3>
+        <p class="price">$17,590 <small>asking, before tax</small></p>
+        <p class="otd">≈ $19,300 out the door at full 9.75% · <span class="yes">✓ still under $20k taxed</span></p>
+        <p class="where">Used · Greenway Equipment, Morrilton (~2 hr) · ask for Robert Wallace</p>
+        <div class="specs">
+          <div class="spec"><b>31 hp</b><span>engine</span></div>
+          <div class="spec"><b>Hydro</b><span>twin pedal</span></div>
+          <div class="spec"><b>331 hrs</b><span>hours</span></div>
+          <div class="spec"><b>D160</b><span>Deere loader</span></div>
+          <div class="spec"><b>MFWD</b><span>4WD</span></div>
+          <div class="spec"><b>⚠ 3PH</b><span>listed “No”</span></div>
+        </div>
+        <div class="why"><b>Why it matches</b><p>A garage-kept, freshly serviced Deere with hydro pedals and a real loader, under $20k even after tax — and Greenway can stand behind it.</p></div>
+        <div class="watch"><b>Watch out</b><p>The listing literally says “Three Point Hitch: No.” If the arms are truly missing, the auger/cutter future dies until you buy parts — verify physically before the 2-hour drive is worth it. Deere dealer support near Fayetteville is thinner than Kubota/KIOTI.</p></div>
+        <details class="deal">
+          <summary>The deal play <span class="tgt">target $16,000–16,750</span></summary>
+          <div class="body">
+            <p><b>The math:</b> comps put 2017 3032Es with loaders at $17,950–18,995 (235–633 hrs), and one sold at $18,950 — so $17,590 is already at market. The discount argument is the missing/unlisted three-point hitch and the 2-hour distance.</p>
+            <p><b>Open at $15,750.</b> Realistic landing: <b>$16,000–16,750</b>, or $17,590 with the 3-point hitch confirmed complete, fresh fluids documented, and delivery to Fayetteville included.</p>
+            <p><b>Context:</b> the same store’s 2020 unit (256 hrs) just dropped $25,990 → $24,750 — they are moving prices.</p>
+          </div>
+        </details>
+        <div class="cardlinks">
+          <a href="https://tractorzoom.com/equipment/2017-john-deere-3032e-d4939e63-6ad5-4304-ba05-0176f08516c9" target="_blank" rel="noopener">Dealer listing →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> price, hours, “3PH: No” flag, still listed</p>
+      </article>
+
+      <!-- B3. CK2620MB manual -->
+      <article class="opt" aria-label="Budget option: KIOTI CK2620MB manual">
+        <p class="k">Big frame, gear shift</p>
+        <h3>2025 KIOTI CK2620MB + loader · new</h3>
+        <p class="price">$18,900 <small>cash, before tax</small></p>
+        <p class="otd">≈ $20,750 out the door at full 9.75% · <span class="no">✗ crosses $20k once taxed</span></p>
+        <p class="where">New · Tatum Motor Company, Tontitown (~20 min) · <a href="tel:+14793619488">(479) 361-9488</a></p>
+        <div class="specs">
+          <div class="spec"><b>1,835 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>19.5 hp</b><span>PTO</span></div>
+          <div class="spec"><b>54.5 in</b><span>wide</span></div>
+          <div class="spec"><b>60 in</b><span>SSQA bucket</span></div>
+          <div class="spec"><b>9×3</b><span>manual gears</span></div>
+          <div class="spec"><b>6 yr</b><span>powertrain wty</span></div>
+        </div>
+        <div class="why"><b>Why it matches</b><p>The full CK frame and the same 1,835-lb loader as the $24,000 top pick — under $19k, new, with the 6-year powertrain warranty. The cheapest way to own the big loader.</p></div>
+        <div class="watch"><b>Watch out</b><p>It’s a clutch and a 9×3 shift lever. Every loader cycle means gear work while Jack is also learning the bucket. This card exists for the price; the transmission is the wrong one for a first-time loader operator.</p></div>
+        <details class="deal">
+          <summary>The deal play <span class="tgt">target $18,000–18,500</span></summary>
+          <div class="body">
+            <p><b>Only if Jack test-drives it and genuinely doesn’t mind gears.</b> Open at $17,750 cash; realistic landing <b>$18,000–18,500</b> plus delivery. Serial 357 is the one unit at this price.</p>
+            <p><b>The smarter conversation:</b> use this $18,900 as the anchor to pull the HST version (CK2620H, $21,000) down toward $20,000 — “your own lot prices the gearbox at a $2,100 premium for pedals.”</p>
+          </div>
+        </details>
+        <div class="cardlinks">
+          <a href="https://www.tatummotor.com/PrintInventory-KIOTI-Tractor-CK-Series-CK2620MB-Tontitown-id-18026021" target="_blank" rel="noopener">Dealer listing →</a>
+          <a href="https://www.kioti.com/products/tractors/ck/ck2620h" target="_blank" rel="noopener">Platform specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> cash price, serial, availability</p>
+      </article>
+
+      <!-- B4. New CX2510H -->
+      <article class="opt" aria-label="Budget option: new KIOTI CX2510H">
+        <p class="k">At the cap · new-warranty path</p>
+        <h3>2025 KIOTI CX2510H + loader · new</h3>
+        <p class="price">$20,000 <small>cash, before tax</small></p>
+        <p class="otd">≈ $21,950 out the door at full 9.75% · <span class="no">✗ crosses $20k once taxed</span></p>
+        <p class="where">New · Tatum Motor Company, Tontitown (~20 min) · <a href="tel:+14793619488">(479) 361-9488</a></p>
+        <div class="specs">
+          <div class="spec"><b>1,092 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>19.3 hp</b><span>PTO</span></div>
+          <div class="spec"><b>49.4 in</b><span>wide</span></div>
+          <div class="spec"><b>82.8 in</b><span>height</span></div>
+          <div class="spec"><b>50 in</b><span>bucket</span></div>
+          <div class="spec"><b>6 yr</b><span>powertrain wty</span></div>
+        </div>
+        <div class="why"><b>Why it matches</b><p>Same narrow platform as the used one, but new: full warranty, zero hours, HST pedals. The right call if the route demands narrow and Jack wants the no-surprises path.</p></div>
+        <div class="watch"><b>Watch out</b><p>Same trade as the used CX: smaller bucket, more trips, less future capacity. And $7,500 more than the used twin parked fifteen minutes away — that gap buys a lot of attachments.</p></div>
+        <details class="deal">
+          <summary>The deal play <span class="tgt">target $19,000–19,500</span></summary>
+          <div class="body">
+            <p><b>Open at $19,000 cash</b> (financed price is $22,500 — cash is the discount). Realistic landing: <b>$19,000–19,500</b>, or $20,000 with delivery and ballast thrown in.</p>
+            <p><b>Quiet ammo:</b> out-of-state dealers advertise new CX2510s <em>with loader</em> at $16,570–17,900 on free-loader promos — freight and trim differ, but it proves the ask has air in it. And KIOTI’s promo window closes <b>Aug 31</b>.</p>
+          </div>
+        </details>
+        <div class="cardlinks">
+          <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CX-Series-CX2510H-Tontitown-16920920" target="_blank" rel="noopener">Dealer listing →</a>
+          <a href="https://www.kioti.com/products/tractors/cx/cx2510" target="_blank" rel="noopener">Official specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> price, availability, specs</p>
+      </article>
+    </div>
+    <div class="dots" role="tablist" aria-label="$20k lane position"></div>
+  </section>
+
+  <!-- ================= LANE 2: BEST MATCH ================= -->
+  <section id="best" class="deckzone">
+    <div class="wrap">
+      <h2>Best match</h2>
+      <p class="h2sub">The machines that actually match dump-truck mulch with room for a cutter, auger, forks and grading later. This is where stretching past $20k is justified — and only here. Loader-number honesty: every maker rates lift at the pivot pin, but KIOTI rates at a 59.8-in lift height while Kubota, Bobcat and Bad Boy rate at full height — ask every dealer for <em>lift at full height with the actual bucket</em>.</p>
+    </div>
+    <div class="deckbar">
+      <span class="count">1 / 5</span>
+      <span class="swipehint">Swipe for more →</span>
+      <div class="btns">
+        <button class="navbtn prevbtn" aria-label="Previous option in best-match lane">←</button>
+        <button class="navbtn nextbtn" aria-label="Next option in best-match lane">→</button>
+      </div>
+    </div>
+    <div class="deck" tabindex="0" aria-label="Best match options carousel">
 
       <!-- 1. KIOTI CK3520H -->
-      <article class="opt rec" aria-label="Option 1: KIOTI CK3520H">
+      <article class="opt rec" aria-label="Best match option: KIOTI CK3520H">
         <p class="k">Best all-around</p>
         <h3>2025 KIOTI CK3520H HST + loader</h3>
         <p class="price">$24,000 <small>cash, before tax</small></p>
@@ -228,7 +367,7 @@
       </article>
 
       <!-- 2. Bad Boy 4035H -->
-      <article class="opt" aria-label="Option 2: Bad Boy 4035H used">
+      <article class="opt" aria-label="Best match option: Bad Boy 4035H used">
         <p class="k">Maximum capability</p>
         <h3>2024 Bad Boy 4035H · used, 110 hrs</h3>
         <p class="price">$24,400 <small>asking, before tax</small></p>
@@ -262,7 +401,7 @@
       </article>
 
       <!-- 3. Kubota L3302 -->
-      <article class="opt" aria-label="Option 3: Kubota L3302HST">
+      <article class="opt" aria-label="Best match option: Kubota L3302HST">
         <p class="k">Safest ownership path</p>
         <h3>Kubota L3302 HST + LA526 loader</h3>
         <p class="price">Quote <small>needed · expect ≈ $27.5–29.5k new</small></p>
@@ -294,7 +433,7 @@
       </article>
 
       <!-- 4. Bobcat CT2035 -->
-      <article class="opt" aria-label="Option 4: Bobcat CT2035">
+      <article class="opt" aria-label="Best match option: Bobcat CT2035">
         <p class="k">Local 35-hp alternative</p>
         <h3>2026 Bobcat CT2035 HST · 1 hr</h3>
         <p class="price">Call <small>for price · MSRP $28,653 before loader</small></p>
@@ -325,7 +464,7 @@
       </article>
 
       <!-- 5. KIOTI CK2620H -->
-      <article class="opt" aria-label="Option 5: KIOTI CK2620H">
+      <article class="opt" aria-label="Best match option: KIOTI CK2620H">
         <p class="k">Lower-cost new loader</p>
         <h3>2025 KIOTI CK2620H HST + loader</h3>
         <p class="price">$21,000 <small>cash, before tax</small></p>
@@ -355,50 +494,156 @@
         </div>
         <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> price, availability, specs</p>
       </article>
+    </div>
+    <div class="dots" role="tablist" aria-label="Best match lane position"></div>
+  </section>
 
-      <!-- 6. CX2510 lane -->
-      <article class="opt" aria-label="Option 6: KIOTI CX2510 narrow lane">
-        <p class="k">Tight access / lowest cost</p>
-        <h3>KIOTI CX2510 narrow lane · new or used</h3>
-        <p class="price">$20,000 <small>new</small> · $12,500 <small>used, 211 hrs</small></p>
-        <p class="otd">New ≈ $21,950 · used ≈ $13,700 out the door at full 9.75%</p>
-        <p class="where">New: Tatum, Tontitown · Used: WT Equipment, Springdale · Gary Bramall <a href="tel:+14798417053">(479) 841-7053</a></p>
+  <!-- ================= LANE 3: ADDITIONAL RECOMMENDATIONS ================= -->
+  <section id="additional" class="deckzone">
+    <div class="wrap">
+      <h2>Additional recommendations</h2>
+      <p class="h2sub">Upgrades, near-misses, the rental that covers the digging, and what the market is telling us. Useful context — not the first demo set.</p>
+    </div>
+    <div class="deckbar">
+      <span class="count">1 / 5</span>
+      <span class="swipehint">Swipe for more →</span>
+      <div class="btns">
+        <button class="navbtn prevbtn" aria-label="Previous option in additional lane">←</button>
+        <button class="navbtn nextbtn" aria-label="Next option in additional lane">→</button>
+      </div>
+    </div>
+    <div class="deck" tabindex="0" aria-label="Additional recommendations carousel">
+
+      <!-- A1. Rent the digging -->
+      <article class="opt" aria-label="Additional: rent a mini-excavator">
+        <p class="k">Pairs with any purchase</p>
+        <h3>Rent the digging: mini-excavator</h3>
+        <p class="price">≈ $300 <small>per day, local rental (confirm current rates)</small></p>
+        <p class="otd">A few digging days a year ≈ $900–1,500 — versus ~$8,000+ to own a backhoe</p>
+        <p class="where">Rental yards in Springdale / Fayetteville · book by the day</p>
         <div class="specs">
-          <div class="spec"><b>1,092 lb</b><span>loader lift</span></div>
-          <div class="spec"><b>19.3 hp</b><span>PTO</span></div>
-          <div class="spec"><b>49.4 in</b><span>wide</span></div>
-          <div class="spec"><b>82.8 in</b><span>height</span></div>
-          <div class="spec"><b>50 in</b><span>bucket</span></div>
-          <div class="spec"><b>211 hrs</b><span>used unit</span></div>
+          <div class="spec"><b>$0</b><span>capital tied up</span></div>
+          <div class="spec"><b>0 hrs</b><span>added to tractor</span></div>
+          <div class="spec"><b>Real</b><span>dig depth</span></div>
+          <div class="spec"><b>Days</b><span>not seasons</span></div>
+          <div class="spec"><b>No</b><span>storage needed</span></div>
+          <div class="spec"><b>Hired</b><span>option too</span></div>
         </div>
-        <div class="why"><b>Why it matches</b><p>The fallback lane if the 60-in bucket or 92.9-in ROPS won’t clear the kennel corridor. Ten inches narrower than the Bobcat. The used one is the lowest-cost credible machine in the region.</p></div>
-        <div class="watch"><b>Watch out</b><p>Smaller bucket means more trips per dump-truck load, lower dump height, and less future capacity. Choose this lane for fit, not to save money you’ll respend in time.</p></div>
+        <div class="why"><b>Why it matches</b><p>Jack digs a few days a year, and the back pad was opened with a hired machine. Renting keeps the tractor money in the loader that works every week — and a real excavator out-digs any compact-tractor backhoe anyway.</p></div>
+        <div class="watch"><b>Watch out</b><p>Call Arkansas 811 before any dig day, and locate the private lines (septic, irrigation, camera, electric) first — the resort has buried infrastructure everywhere dogs play.</p></div>
         <details class="deal">
-          <summary>The deal play <span class="tgt">new $19,000–19,500 · used $11,500–12,000</span></summary>
+          <summary>The deal play <span class="tgt">book days, don’t buy iron</span></summary>
           <div class="body">
-            <p><b>New at $20,000 cash</b> (financed $22,500): open $19,000; realistic <b>$19,000–19,500</b>, or $20,000 with delivery and ballast thrown in. Quiet ammo: out-of-state dealers advertise new CX2510s <em>with loader</em> at $16,570–17,900 on free-loader promos — freight and trim differ, but it proves the ask has air in it.</p>
-            <p><b>Used at $12,500</b> (2020, 211 hrs, with loader): fair, not a steal, against those new numbers. Open $11,000 cash-today; realistic <b>$11,500–12,000</b>. Cold-start it, hold the loaded bucket up 30 seconds, and check the hour meter looks original.</p>
+            <p>Get day rates from two rental yards (Springdale and Fayetteville both have national chains), ask for the weekend rate — pick up Saturday morning, return Monday, pay one day at many yards.</p>
+            <p>If a project ever needs two weeks of digging, that’s the moment to re-price owning — not before.</p>
           </div>
         </details>
-        <div class="cardlinks">
-          <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CX-Series-CX2510H-Tontitown-16920920" target="_blank" rel="noopener">New listing →</a>
-          <a href="https://www.machinerypete.com/details/under-40-hp/2020/kioti/cx2510hst/22246660" target="_blank" rel="noopener">Used listing →</a>
-          <a href="https://www.kioti.com/products/tractors/cx/cx2510" target="_blank" rel="noopener">Official specs →</a>
+        <p class="checked"><span class="ok">✓ Working number</span> from the Aug 20 project research — refresh day rates when a dig is scheduled</p>
+      </article>
+
+      <!-- A2. CK4020H -->
+      <article class="opt" aria-label="Additional: KIOTI CK4020H">
+        <p class="k">The upgrade nobody needs yet</p>
+        <h3>2025 KIOTI CK4020H HST + loader</h3>
+        <p class="price">$27,000 <small>cash, before tax</small></p>
+        <p class="otd">≈ $29,630 out the door at full 9.75%</p>
+        <p class="where">New · Tatum Motor Company, Tontitown (~20 min) · <a href="tel:+14793619488">(479) 361-9488</a></p>
+        <div class="specs">
+          <div class="spec"><b>1,835 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>40 hp</b><span>engine class</span></div>
+          <div class="spec"><b>54.5 in</b><span>wide</span></div>
+          <div class="spec"><b>60 in</b><span>SSQA bucket</span></div>
+          <div class="spec"><b>HST</b><span>twin pedal</span></div>
+          <div class="spec"><b>6 yr</b><span>powertrain wty</span></div>
         </div>
-        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> both prices, hours, specs</p>
+        <div class="why"><b>Why it’s here</b><p>Same loader, same footprint as the CK3520H — the extra $3,000 buys PTO power only.</p></div>
+        <div class="watch"><b>Watch out</b><p>Nothing on Jack’s task list needs 40 hp of PTO. If heavy sustained PTO work ever becomes the plan, this is the card to revisit.</p></div>
+        <div class="cardlinks">
+          <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CK-Series-CK4020HB-Tontitown-17152016" target="_blank" rel="noopener">Dealer listing →</a>
+          <a href="https://www.kioti.com/products/tractors/ck/ck4020h" target="_blank" rel="noopener">Official specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> price, availability</p>
+      </article>
+
+      <!-- A3. Bad Boy 4025H -->
+      <article class="opt" aria-label="Additional: Bad Boy 4025H">
+        <p class="k">Loader-first near-miss</p>
+        <h3>2025 Bad Boy 4025H + loader · new</h3>
+        <p class="price">Call <small>for price · ≈ $277/mo promo benchmark</small></p>
+        <p class="otd">Same 2,200-lb loader as the 4035H, on a 25-hp engine</p>
+        <p class="where">New · NWA Tractors &amp; Turf, Springdale (~15 min) · <a href="tel:+14793342090">(479) 334-2090</a></p>
+        <div class="specs">
+          <div class="spec"><b>2,200 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>19.1 hp</b><span>PTO</span></div>
+          <div class="spec"><b>56.7 in</b><span>wide</span></div>
+          <div class="spec"><b>62 in</b><span>bucket</span></div>
+          <div class="spec"><b>HST</b><span>dual pedal</span></div>
+          <div class="spec"><b>6 yr</b><span>powertrain wty</span></div>
+        </div>
+        <div class="why"><b>Why it’s here</b><p>The biggest loader per dollar in Springdale, closest dealer to the resort, HST pedals.</p></div>
+        <div class="watch"><b>Watch out</b><p>Only 19.1 PTO hp — a loader specialist, not the balanced utility-knife pick. Wider and taller than the KIOTIs; the corridor tape decides.</p></div>
+        <div class="cardlinks">
+          <a href="https://nwatractor.com/vehicle/7018/" target="_blank" rel="noopener">Dealer unit page →</a>
+          <a href="https://badboycountry.com/tractors/4025-tractor" target="_blank" rel="noopener">Official specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> unit on dealer site, specs · price is call-only</p>
+      </article>
+
+      <!-- A4. 4035HILB backhoe -->
+      <article class="opt" aria-label="Additional: Bad Boy 4035HILB with backhoe">
+        <p class="k">Right family, wrong configuration</p>
+        <h3>Bad Boy 4035HILB + loader + backhoe</h3>
+        <p class="price">Call <small>for price · stock BBP00256</small></p>
+        <p class="otd">The backhoe adds cost and length the dig-schedule doesn’t justify</p>
+        <p class="where">New · NWA Tractors &amp; Turf, Springdale (~15 min) · <a href="tel:+14793342090">(479) 334-2090</a></p>
+        <div class="specs">
+          <div class="spec"><b>2,200 lb</b><span>loader lift</span></div>
+          <div class="spec"><b>29.5 hp</b><span>PTO</span></div>
+          <div class="spec"><b>35 hp</b><span>engine</span></div>
+          <div class="spec"><b>+ hoe</b><span>subframe</span></div>
+          <div class="spec"><b>HST</b><span>3-range</span></div>
+          <div class="spec"><b>6 yr</b><span>powertrain wty</span></div>
+        </div>
+        <div class="why"><b>Why it’s here</b><p>If Jack ever decides he must own his digging, this is the local unit — right 35-hp family, on a lot fifteen minutes away.</p></div>
+        <div class="watch"><b>Watch out</b><p>A few digging days a year doesn’t buy a backhoe: it’s money, weight and length carried every day for a tool used twice a year. Rent the mini-ex instead (previous card).</p></div>
+        <div class="cardlinks">
+          <a href="https://nwatractor.com/vehicle/7020/" target="_blank" rel="noopener">Dealer unit page →</a>
+          <a href="https://badboycountry.com/tractors/4035-tractor" target="_blank" rel="noopener">Official specs →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> unit on dealer site · price is call-only</p>
+      </article>
+
+      <!-- A5. Market watch -->
+      <article class="opt" aria-label="Additional: market watch">
+        <p class="k">What the market just told us</p>
+        <h3>Two good used units sold in days</h3>
+        <p class="price">Gone <small>both delisted by 23 Aug</small></p>
+        <p class="otd">Used Kubota L2502HST ($22,000 · 184 hrs) and L3301D ($18,000 · 145 hrs) — both Springdale, both vanished</p>
+        <p class="where">Was: WT Equipment / Springdale market</p>
+        <div class="specs">
+          <div class="spec"><b>Days</b><span>on market</span></div>
+          <div class="spec"><b>2</b><span>guide units sold</span></div>
+          <div class="spec"><b>Tight</b><span>used supply</span></div>
+        </div>
+        <div class="why"><b>The lesson</b><p>Clean, low-hour used compacts around Springdale move in days, not weeks. When the tape measurements pass and a used unit checks out, the decision window is short. (National auction data shows the used-compact market strengthening through 2026.)</p></div>
+        <div class="watch"><b>Also noted</b><p>Tatum’s manual CK3520MB sits at the same $24,000 cash as the HST CK3520H — no reason to take the clutch. And the 2020 JD 3032E at Greenway dropped $25,990 → $24,750 — Deere stores are adjusting down.</p></div>
+        <div class="cardlinks">
+          <a href="https://www.machinerypete.com/store/wt-equipment-springdale" target="_blank" rel="noopener">WT Equipment current stock →</a>
+        </div>
+        <p class="checked"><span class="ok">✓ Verified 23 Aug:</span> both delistings confirmed across feeds</p>
       </article>
     </div>
-    <div class="dots" id="dots" role="tablist" aria-label="Option position"></div>
+    <div class="dots" role="tablist" aria-label="Additional lane position"></div>
   </section>
 
   <!-- ================= FIT ================= -->
   <section id="fit" class="wrap">
     <h2>Will it fit? That decides everything.</h2>
-    <p class="h2sub">Options 1–5 all assume the CK-size machine clears the route. Tape these before any demo:</p>
+    <p class="h2sub">The whole Best-match lane assumes the CK-size machine clears the route — and in the $20k lane, the Deere and the manual KIOTI are that size too. Only the CX platform is truly narrow. Tape these before any demo:</p>
     <div class="gate">
       <p><b>The numbers that must clear the route:</b></p>
       <div class="nums"><span>60-in bucket</span><span>92.9-in ROPS</span><span>54.5-in tractor</span></div>
-      <p>If any of those fail at the pinch points, drop to the CX lane (50-in bucket, 49.4-in tractor) and skip the Bobcat entirely (62.4-in wide).</p>
+      <p>If any of those fail at the pinch points, the CX lane (50-in bucket, 49.4-in tractor) becomes the plan — and the Bobcat (62.4-in wide) is out entirely.</p>
       <ul class="tape">
         <li>Driveway gate usable opening</li>
         <li>Kennel-corridor width at the pinch (the pickup-width squeeze)</li>
@@ -417,17 +662,21 @@
     <table class="deals">
       <thead><tr><th>Machine</th><th>Listed</th><th>Realistic target</th></tr></thead>
       <tbody>
+        <tr><td class="grp" colspan="3">$20k &amp; below</td></tr>
+        <tr><td>KIOTI CX2510HST (used, 211 hrs)</td><td class="n">$12,500</td><td class="t">$11,500–12,000</td></tr>
+        <tr><td>JD 3032E (used, 331 hrs)</td><td class="n">$17,590</td><td class="t">$16,000–16,750</td></tr>
+        <tr><td>KIOTI CK2620MB (new, manual)</td><td class="n">$18,900 cash</td><td class="t">$18,000–18,500</td></tr>
+        <tr><td>KIOTI CX2510H (new)</td><td class="n">$20,000 cash</td><td class="t">$19,000–19,500</td></tr>
+        <tr><td class="grp" colspan="3">Best match</td></tr>
         <tr><td>KIOTI CK3520H (new)</td><td class="n">$24,000 cash</td><td class="t">$23,000–23,500</td></tr>
         <tr><td>Bad Boy 4035H (used)</td><td class="n">$24,400</td><td class="t">$22,000–23,000</td></tr>
         <tr><td>Kubota L3302 pkg (new)</td><td class="n">quote</td><td class="t">$27,500–28,500 delivered</td></tr>
         <tr><td>Bobcat CT2035 (new)</td><td class="n">quote · MSRP $28,653</td><td class="t">$24,000–25,000 w/ loader</td></tr>
         <tr><td>KIOTI CK2620H (new)</td><td class="n">$21,000 cash</td><td class="t">$20,000–20,500</td></tr>
-        <tr><td>KIOTI CX2510H (new)</td><td class="n">$20,000 cash</td><td class="t">$19,000–19,500</td></tr>
-        <tr><td>KIOTI CX2510HST (used)</td><td class="n">$12,500</td><td class="t">$11,500–12,000</td></tr>
       </tbody>
     </table>
     <div class="plays">
-      <p><b>Every conversation, same five plays.</b></p>
+      <p><b>Every conversation, same six plays.</b></p>
       <p><b>1 · All-in, in writing.</b> One number that includes tax, freight, setup, dealer fees, delivery to Fayetteville, and rear ballast. Dealers hide $800–1,500 in the gaps.</p>
       <p><b>2 · Cash is the discount.</b> On the KIOTIs, the “0%” price runs $2,500–3,900 above the cash price. If paying cash, negotiate the cash number and ignore the payment talk.</p>
       <p><b>3 · Same-week competing quotes.</b> Tatum (KIOTI), Springdale Tractor Co. (Kubota), Bobcat of NWA — all within 30 minutes. Get three written numbers in one week and show them to each other.</p>
@@ -451,33 +700,6 @@
     </ol>
   </section>
 
-  <!-- ================= OTHER INVENTORY ================= -->
-  <section id="more" class="wrap">
-    <h2>Also out there</h2>
-    <p class="h2sub">Price checks, upgrades and fallbacks — not the first demo set.</p>
-
-    <div class="more"><div class="row1"><b>2024 Kubota L2502HST · used</b><span class="m">was $22,000 · 184 hrs · Springdale — delisted</span></div>
-      <p>Gone from every feed as of 23 Aug — likely sold. It was priced against the new CK2620H ($21k) with less loader and PTO anyway. If one resurfaces under ~$20k it gets interesting. <a href="https://www.machinerypete.com/tractors/under-40-hp/kubota/l2502hst" target="_blank" rel="noopener">Current L2502HST listings →</a></p></div>
-
-    <div class="more"><div class="row1"><b>2025 KIOTI CK4020H · new</b><span class="m">$27,000 cash · Tatum, Tontitown</span></div>
-      <p>Same loader and footprint as the CK3520H — the extra $3,000 buys PTO power, not lift. Only if heavy PTO work becomes the plan. <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CK-Series-CK4020HB-Tontitown-17152016" target="_blank" rel="noopener">Listing →</a></p></div>
-
-    <div class="more"><div class="row1"><b>2025 Bad Boy 4025H · new</b><span class="m">Call · NWA Tractors &amp; Turf, Springdale</span></div>
-      <p>Strong 2,200-lb loader, but only 19.1 PTO hp — loader-first, not the balanced pick. New ≈ $277/mo promo benchmark. <a href="https://nwatractor.com/vehicle/7018/" target="_blank" rel="noopener">Dealer page →</a></p></div>
-
-    <div class="more"><div class="row1"><b>Bad Boy 4035 + backhoe (4035HILB)</b><span class="m">Call · NWA Tractors &amp; Turf, Springdale · (479) 334-2090</span></div>
-      <p>Right 35-hp family, wrong configuration: a few digging days a year doesn’t buy a backhoe. Keep renting the mini-ex. <a href="https://nwatractor.com/vehicle/7020/" target="_blank" rel="noopener">Unit page →</a></p></div>
-
-    <div class="more"><div class="row1"><b>2017 John Deere 3032E · used</b><span class="m">$17,590 · 331 hrs · Greenway, Morrilton (~2 hr)</span></div>
-      <p>Hydro, loader, freshly serviced — but the listing literally says “Three Point Hitch: No.” Verify in person before treating it as all-purpose. Comps put 2017s with loaders at $17,950–18,995, so the ask is at market; fair cash target ~$16,000–16,750. Same store’s 2020 unit just dropped $25,990 → $24,750. <a href="https://tractorzoom.com/equipment/2017-john-deere-3032e-d4939e63-6ad5-4304-ba05-0176f08516c9" target="_blank" rel="noopener">Listing →</a></p></div>
-
-    <div class="more"><div class="row1"><b>2020 Kubota L3301D · used</b><span class="m">was $18,000 · 145 hrs · WT Equipment — delisted</span></div>
-      <p>Pulled from the feeds within the last days — likely sold. It was a mechanical shuttle anyway, not the beginner loader-control setup Jack should learn on. <a href="https://www.machinerypete.com/store/wt-equipment-springdale" target="_blank" rel="noopener">WT Equipment’s current used stock →</a></p></div>
-
-    <div class="more"><div class="row1"><b>KIOTI CK2620MB / CK3520MB · manual</b><span class="m">$18,900 / $24,000 cash · Tatum</span></div>
-      <p>Real savings, wrong transmission: 9×3 gear shift fights every loader cycle while Jack is learning. HST stays the call. <a href="https://www.tatummotor.com/inventory/" target="_blank" rel="noopener">Dealer inventory →</a></p></div>
-  </section>
-
   <!-- ================= TAX ================= -->
   <section id="tax" class="wrap">
     <h2>Tax, without surprises</h2>
@@ -497,99 +719,108 @@
       <li><span class="vok">✓</span> <a href="https://www.kioti.com/products/tractors/ck/ck3520h" target="_blank" rel="noopener">KIOTI — CK3520H official specs</a> (28.9 PTO hp · 54.5 in · 92.9 in · MSRP $25,171)</li>
       <li><span class="vok">✓</span> <a href="https://www.machinerypete.com/details/40-99-hp/2024/bad-boy/4035h/22055387" target="_blank" rel="noopener">Machinery Pete — 2024 Bad Boy 4035H, Alma</a> ($24,400 · 110 hrs · warranty dates)</li>
       <li><span class="vok">✓</span> <a href="https://badboycountry.com/tractors/4035-tractor" target="_blank" rel="noopener">Bad Boy — 4035 official specs</a> (2,200 lb · 29.5 PTO hp · 56.7 in · $311/mo promo)</li>
+      <li><span class="vok">✓</span> <a href="https://badboycountry.com/tractors/4025-tractor" target="_blank" rel="noopener">Bad Boy — 4025 official specs</a> (2,200 lb · 19.1 PTO hp · $277/mo promo)</li>
       <li><span class="vok">✓</span> <a href="https://kubotacenter.com/new-compact-tractors-springdale-ar/kubota-l3302-compact-tractor-springdale-ar" target="_blank" rel="noopener">Springdale Tractor Co. (dba Kubota Center) — L3302 page</a> · <a href="https://kubotacenter.com/dealer-locations/springdale-tractor-company" target="_blank" rel="noopener">dealer identity</a></li>
       <li><span class="vok">✓</span> <a href="https://www.kubotausa.com/special-offer/standard-l-series-tractors" target="_blank" rel="noopener">Kubota USA — Standard L offer</a> ($3,000 rebate or 0%×36, ends 9/30)</li>
       <li><span class="vok">✓</span> <a href="https://kioti-api.files.svdcdn.com/production/manual/LIT-CK20-SPECS-MERGED.pdf" target="_blank" rel="noopener">KIOTI — CK20-series spec sheet (KL4030 loader: 1,835 lb)</a></li>
       <li><span class="vok">✓</span> <a href="https://www.ranchlandtractor.com/Promotion-Details-b9d36a6e-8d6e-4ccd-a1a2-b45d007ba849" target="_blank" rel="noopener">KIOTI dealer promo sheet — 0% / free loader / up to $3,000 cash back, ends 8/31</a></li>
-      <li><span class="vok">✓</span> <a href="https://nwatractor.com/vehicle/7020/" target="_blank" rel="noopener">NWA Tractors &amp; Turf — 4035HILB backhoe unit</a></li>
+      <li><span class="vok">✓</span> <a href="https://nwatractor.com/vehicle/7018/" target="_blank" rel="noopener">NWA Tractors &amp; Turf — 4025H unit</a> · <a href="https://nwatractor.com/vehicle/7020/" target="_blank" rel="noopener">4035HILB backhoe unit</a></li>
       <li><span class="vok">✓</span> <a href="https://www.kubotausa.com/docs/default-source/brochure-sheets/l02.pdf" target="_blank" rel="noopener">Kubota — L02 brochure (LA526 loader: 1,144 lb)</a></li>
       <li><span class="vok">✓</span> <a href="https://www.bobcat.com/na/en/equipment/tractors/compact-tractors/2000-platform-compact-tractors/ct2035" target="_blank" rel="noopener">Bobcat — CT2035 official specs &amp; promo</a> (1,389 lb · 29.4 PTO hp · 62.4 in · MSRP $28,653)</li>
       <li><span class="vok">✓</span> <a href="https://www.machinerypete.com/details/under-40-hp/2026/bobcat/ct2035/21916056" target="_blank" rel="noopener">Machinery Pete — 2026 CT2035, serial B5AF11356, Rogers</a></li>
       <li><span class="vok">✓</span> <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CK-Series-CK2620HB-Tontitown-16926680" target="_blank" rel="noopener">Tatum — CK2620H listing</a> ($21,000 cash)</li>
+      <li><span class="vok">✓</span> <a href="https://www.tatummotor.com/PrintInventory-KIOTI-Tractor-CK-Series-CK2620MB-Tontitown-id-18026021" target="_blank" rel="noopener">Tatum — CK2620MB manual listing</a> ($18,900 cash · serial 357)</li>
       <li><span class="vok">✓</span> <a href="https://www.kioti.com/products/tractors/ck/ck2620h" target="_blank" rel="noopener">KIOTI — CK2620H official specs</a> (MSRP $20,712)</li>
       <li><span class="vok">✓</span> <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CX-Series-CX2510H-Tontitown-16920920" target="_blank" rel="noopener">Tatum — CX2510H listing</a> ($20,000 cash · 49.4 in · 1,092 lb)</li>
       <li><span class="vok">✓</span> <a href="https://www.machinerypete.com/details/under-40-hp/2020/kioti/cx2510hst/22246660" target="_blank" rel="noopener">Machinery Pete — used 2020 CX2510HST, Springdale</a> ($12,500 · 211 hrs)</li>
       <li><span class="vok">✓</span> <a href="https://www.kioti.com/products/tractors/cx/cx2510" target="_blank" rel="noopener">KIOTI — CX2510 official specs</a></li>
       <li><span class="vok">✓</span> <a href="https://tractorzoom.com/equipment/2017-john-deere-3032e-d4939e63-6ad5-4304-ba05-0176f08516c9" target="_blank" rel="noopener">TractorZoom — 2017 JD 3032E, Greenway Morrilton</a> ($17,590 · 331 hrs · “3PH: No”)</li>
       <li><span class="vok">✓</span> <a href="https://www.tatummotor.com/New-Inventory-2025-KIOTI-Tractor-CK-Series-CK4020HB-Tontitown-17152016" target="_blank" rel="noopener">Tatum — CK4020H listing</a> ($27,000 cash)</li>
+      <li><span class="vok">✓</span> <a href="https://www.machinerypete.com/store/wt-equipment-springdale" target="_blank" rel="noopener">Machinery Pete — WT Equipment Springdale store</a> (delisting checks)</li>
       <li><span class="vok">✓</span> <a href="https://www.fayetteville-ar.gov/509/Sales-Tax-Rates" target="_blank" rel="noopener">City of Fayetteville — sales tax rates</a> (9.75% total)</li>
-      <li><a href="https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/" target="_blank" rel="noopener">Arkansas DFA — local tax rebate FAQ</a></li>
+      <li><span class="vok">✓</span> <a href="https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/sales-and-use-tax-faqs/" target="_blank" rel="noopener">Arkansas DFA — local tax rebate FAQ</a> (Form ET-179A · 1-year window)</li>
       <li><a href="https://www.tractorhouse.com/listing/for-sale/253413425/2024-bad-boy-4035h-less-than-40-hp-tractors" target="_blank" rel="noopener">TractorHouse — Bad Boy 4035H listing</a> (dealer’s canonical listing)</li>
     </ul>
   </section>
 
   <footer>
-    <p>Inventory snapshot 22 August 2026 · prices, availability and links re-verified 23 August 2026. Asking prices, not offers; inventory moves. “Listed available” means shown on the dealer feed, not held.</p>
+    <p>Inventory snapshot 22 August 2026 · prices, availability, links and the surrounding market re-verified 23 August 2026. Asking prices, not offers; inventory moves. “Listed available” means shown on the dealer feed, not held.</p>
     <p>Recommendation only — no purchase approved, no vendor contacted, nothing reserved. <b>Jack Jones decides.</b> Prepared by Rover Oaks Consulting HQ with Fuller Chandler.</p>
   </footer>
 </main>
 
 <script>
 (function () {
-  var deck = document.getElementById('deck');
-  var cards = Array.prototype.slice.call(deck.children);
-  var dotsBox = document.getElementById('dots');
-  var count = document.getElementById('deckcount');
-  var current = 0;
+  function initDeck(zone) {
+    var deck = zone.querySelector('.deck');
+    if (!deck) return;
+    var cards = Array.prototype.slice.call(deck.children);
+    var dotsBox = zone.querySelector('.dots');
+    var count = zone.querySelector('.count');
+    var prevBtn = zone.querySelector('.prevbtn');
+    var nextBtn = zone.querySelector('.nextbtn');
+    var current = 0;
 
-  cards.forEach(function (c, i) {
-    var b = document.createElement('button');
-    b.setAttribute('aria-label', 'Go to option ' + (i + 1));
-    b.addEventListener('click', function () { scrollToCard(i); });
-    dotsBox.appendChild(b);
-  });
-  var dots = Array.prototype.slice.call(dotsBox.children);
-
-  function setCurrent(i) {
-    current = i;
-    dots.forEach(function (d, j) { d.classList.toggle('on', j === i); });
-    count.textContent = (i + 1) + ' / ' + cards.length;
-  }
-  function scrollToCard(i) {
-    i = Math.max(0, Math.min(cards.length - 1, i));
-    var c = cards[i];
-    deck.scrollTo({ left: c.offsetLeft - (deck.clientWidth - c.clientWidth) / 2, behavior: 'smooth' });
-  }
-  document.getElementById('prev').addEventListener('click', function () { scrollToCard(current - 1); });
-  document.getElementById('next').addEventListener('click', function () { scrollToCard(current + 1); });
-  deck.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(current + 1); }
-    if (e.key === 'ArrowLeft') { e.preventDefault(); scrollToCard(current - 1); }
-  });
-
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) {
-      if (en.isIntersecting) { setCurrent(cards.indexOf(en.target)); }
+    cards.forEach(function (c, i) {
+      var b = document.createElement('button');
+      b.setAttribute('aria-label', 'Go to option ' + (i + 1));
+      b.addEventListener('click', function () { scrollToCard(i); });
+      dotsBox.appendChild(b);
     });
-  }, { root: deck, threshold: 0.6 });
-  cards.forEach(function (c) { io.observe(c); });
-  setCurrent(0);
+    var dots = Array.prototype.slice.call(dotsBox.children);
 
-  // Mouse drag-to-swipe (touch devices already scroll natively)
-  var dragging = false, moved = false, startX = 0, startLeft = 0;
-  deck.addEventListener('mousedown', function (e) {
-    dragging = true; moved = false; startX = e.pageX; startLeft = deck.scrollLeft;
-  });
-  window.addEventListener('mousemove', function (e) {
-    if (!dragging) return;
-    var dx = e.pageX - startX;
-    if (Math.abs(dx) > 6) { moved = true; deck.classList.add('dragging'); }
-    if (moved) { e.preventDefault(); deck.scrollLeft = startLeft - dx; }
-  });
-  window.addEventListener('mouseup', function () {
-    if (!dragging) return;
-    dragging = false;
-    if (moved) {
-      deck.classList.remove('dragging');
-      var mid = deck.scrollLeft + deck.clientWidth / 2, best = 0, bd = Infinity;
-      cards.forEach(function (c, i) {
-        var d = Math.abs((c.offsetLeft + c.clientWidth / 2) - mid);
-        if (d < bd) { bd = d; best = i; }
-      });
-      scrollToCard(best);
+    function setCurrent(i) {
+      current = i;
+      dots.forEach(function (d, j) { d.classList.toggle('on', j === i); });
+      count.textContent = (i + 1) + ' / ' + cards.length;
     }
-  });
-  deck.addEventListener('click', function (e) { if (moved) { e.preventDefault(); moved = false; } }, true);
+    function scrollToCard(i) {
+      i = Math.max(0, Math.min(cards.length - 1, i));
+      var c = cards[i];
+      deck.scrollTo({ left: c.offsetLeft - (deck.clientWidth - c.clientWidth) / 2, behavior: 'smooth' });
+    }
+    prevBtn.addEventListener('click', function () { scrollToCard(current - 1); });
+    nextBtn.addEventListener('click', function () { scrollToCard(current + 1); });
+    deck.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(current + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); scrollToCard(current - 1); }
+    });
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { setCurrent(cards.indexOf(en.target)); }
+      });
+    }, { root: deck, threshold: 0.6 });
+    cards.forEach(function (c) { io.observe(c); });
+    setCurrent(0);
+
+    // Mouse drag-to-swipe (touch devices already scroll natively)
+    var dragging = false, moved = false, startX = 0, startLeft = 0;
+    deck.addEventListener('mousedown', function (e) {
+      dragging = true; moved = false; startX = e.pageX; startLeft = deck.scrollLeft;
+    });
+    window.addEventListener('mousemove', function (e) {
+      if (!dragging) return;
+      var dx = e.pageX - startX;
+      if (Math.abs(dx) > 6) { moved = true; deck.classList.add('dragging'); }
+      if (moved) { e.preventDefault(); deck.scrollLeft = startLeft - dx; }
+    });
+    window.addEventListener('mouseup', function () {
+      if (!dragging) return;
+      dragging = false;
+      if (moved) {
+        deck.classList.remove('dragging');
+        var mid = deck.scrollLeft + deck.clientWidth / 2, best = 0, bd = Infinity;
+        cards.forEach(function (c, i) {
+          var d = Math.abs((c.offsetLeft + c.clientWidth / 2) - mid);
+          if (d < bd) { bd = d; best = i; }
+        });
+        scrollToCard(best);
+      }
+    });
+    deck.addEventListener('click', function (e) { if (moved) { e.preventDefault(); moved = false; } }, true);
+  }
+  Array.prototype.slice.call(document.querySelectorAll('.deckzone')).forEach(initDeck);
 })();
 </script>
 </body>
