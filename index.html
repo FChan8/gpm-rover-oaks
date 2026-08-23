@@ -64,7 +64,8 @@
     .navbtn:hover { background: var(--card); }
     .navbtn:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
     .swipehint { font-size: 13px; color: var(--muted); }
-    .deck { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px max(18px, calc(50vw - 340px)) 18px; scrollbar-width: none; }
+    .deck { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; padding: 4px max(18px, calc(50vw - 340px)) 18px; scrollbar-width: none; }
+    .deck.dragging { scroll-snap-type: none; cursor: grabbing; user-select: none; }
     .deck::-webkit-scrollbar { display: none; }
     .deck > article { flex: 0 0 min(87vw, 400px); scroll-snap-align: center; scroll-snap-stop: always; }
 
@@ -99,9 +100,9 @@
     .cardlinks a { font-weight: 700; font-size: 14.5px; color: var(--ink); }
     .checked { margin: 12px 0 0; font-size: 12px; color: var(--muted); }
     .checked .ok { color: var(--good); font-weight: 700; }
-    .dots { display: flex; gap: 7px; justify-content: center; margin: 2px 0 0; }
-    .dots button { width: 9px; height: 9px; border-radius: 999px; border: 0; padding: 0; background: var(--line); cursor: pointer; }
-    .dots button.on { background: var(--gold); }
+    .dots { display: flex; gap: 2px; justify-content: center; margin: 2px 0 0; }
+    .dots button { width: 24px; height: 24px; border-radius: 999px; border: 0; padding: 7px; background: var(--line); background-clip: content-box; cursor: pointer; }
+    .dots button.on { background: var(--gold); background-clip: content-box; }
 
     /* Deal section */
     table.deals { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--card); border-radius: 14px; overflow: hidden; }
@@ -563,6 +564,32 @@
   }, { root: deck, threshold: 0.6 });
   cards.forEach(function (c) { io.observe(c); });
   setCurrent(0);
+
+  // Mouse drag-to-swipe (touch devices already scroll natively)
+  var dragging = false, moved = false, startX = 0, startLeft = 0;
+  deck.addEventListener('mousedown', function (e) {
+    dragging = true; moved = false; startX = e.pageX; startLeft = deck.scrollLeft;
+  });
+  window.addEventListener('mousemove', function (e) {
+    if (!dragging) return;
+    var dx = e.pageX - startX;
+    if (Math.abs(dx) > 6) { moved = true; deck.classList.add('dragging'); }
+    if (moved) { e.preventDefault(); deck.scrollLeft = startLeft - dx; }
+  });
+  window.addEventListener('mouseup', function () {
+    if (!dragging) return;
+    dragging = false;
+    if (moved) {
+      deck.classList.remove('dragging');
+      var mid = deck.scrollLeft + deck.clientWidth / 2, best = 0, bd = Infinity;
+      cards.forEach(function (c, i) {
+        var d = Math.abs((c.offsetLeft + c.clientWidth / 2) - mid);
+        if (d < bd) { bd = d; best = i; }
+      });
+      scrollToCard(best);
+    }
+  });
+  deck.addEventListener('click', function (e) { if (moved) { e.preventDefault(); moved = false; } }, true);
 })();
 </script>
 </body>
